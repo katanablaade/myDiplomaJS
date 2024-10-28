@@ -1,5 +1,5 @@
 import modal from './modules/modal';
-import module2 from './modules/module2';
+import slider from './modules/slider';
 
 modal();
-module2();
+slider();

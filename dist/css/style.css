@@ -1594,13 +1594,12 @@ input.error {
 .benefits-wrap {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
-.benefits__item {
+/* .benefits__item {
   width: 100%;
   max-width: 185px;
-}
+} */
 
 .benefits-arrows {
   display: flex;
@@ -1664,6 +1663,18 @@ input.error {
   right: 25px;
   bottom: 25px;
   transform: rotate(90deg);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: relative;
+  margin-top: 10px;
+}
+
+.swiper-button-next:after {
+  content: '';
+}
+.swiper-button-prev:after {
+  content: '';
 }
 
 @media (min-width: 576px) {
