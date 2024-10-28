@@ -1676,6 +1676,9 @@ input.error {
 .swiper-button-prev:after {
   content: '';
 }
+.swiper-services {
+  overflow: hidden;
+}
 
 @media (min-width: 576px) {
   .benefits-wrap {
