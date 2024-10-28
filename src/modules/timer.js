@@ -9,7 +9,9 @@ const timer = (deadline) => {
     const dateStop = new Date(deadline).getTime();
     const dateNow = new Date().getTime();
     const timeRemaining = (dateStop - dateNow) / 1000;
-    let days = Math.floor(timeRemaining / 60 / 60 / 24);
+    let days = Math.floor(timeRemaining / 60 / 60 / 24)
+      .toString()
+      .padStart(2, '0');
     let hours = Math.floor((timeRemaining / 60 / 60) % 24)
       .toString()
       .padStart(2, '0');
