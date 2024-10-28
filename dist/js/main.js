@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("module1"),console.log("module2")})();
+(()=>{"use strict";const o=document.querySelector(".btn");console.log(o);console.log("module2")})();

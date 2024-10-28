@@ -1,5 +1,5 @@
-import module1 from './modules/module1';
+import modal from './modules/modal';
 import module2 from './modules/module2';
 
-module1();
+modal();
 module2();
