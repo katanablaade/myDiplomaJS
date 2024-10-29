@@ -5,6 +5,7 @@ import sendForm from './modules/sendForm';
 import validate from './modules/validate';
 import sertificate from './modules/sertificate';
 import scroll from './modules/scroll';
+import calc from './modules/calc';
 
 modal();
 slider();
@@ -16,3 +17,4 @@ sendForm({
 });
 sertificate();
 scroll();
+calc();

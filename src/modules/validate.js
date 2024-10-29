@@ -1,6 +1,7 @@
 const validate = () => {
   const nameInput = document.querySelectorAll('.name-input');
   const phoneInput = document.querySelectorAll('.phone-input');
+  const calcInput = document.getElementById('calc-input');
 
   const nameValidate = () => {
     nameInput.forEach((input) => {
@@ -19,7 +20,18 @@ const validate = () => {
       });
     });
   };
+
+  const calcValidate = () => {
+    calcInput.addEventListener('keydown', (event) => {
+      if (event.key === '+' || event.key === '-') {
+        event.preventDefault();
+      }
+    });
+  };
   nameValidate();
   phoneValidate();
+  if (calcInput) {
+    calcValidate();
+  }
 };
 export default validate;

@@ -24,7 +24,7 @@ const sendForm = ({ formId, someElem = [] }) => {
       someElem.forEach((elem) => {
         const element = document.getElementById(elem.id);
         if (element) {
-          formBody[elem.id] = element.textContent;
+          formBody[elem.id] = element.value;
         }
       });
 
