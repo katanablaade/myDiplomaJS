@@ -4,6 +4,7 @@ import timer from './modules/timer';
 import sendForm from './modules/sendForm';
 import validate from './modules/validate';
 import sertificate from './modules/sertificate';
+import scroll from './modules/scroll';
 
 modal();
 slider();
@@ -14,3 +15,4 @@ sendForm({
   someElem: [{ type: 'number', id: 'calc-total' }],
 });
 sertificate();
+scroll();
