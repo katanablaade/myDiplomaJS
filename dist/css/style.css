@@ -1680,6 +1680,30 @@ input.error {
 .swiper-services {
   overflow: hidden;
 }
+.modal-sertificate {
+  display: none;
+}
+.is-open {
+  display: block;
+  position: fixed;
+  width: 500px;
+  height: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: white;
+}
+.img-sertificate {
+  width: 100%;
+}
+.close-sertificate {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 36px;
+  cursor: pointer;
+}
 
 @media (min-width: 576px) {
   .benefits-wrap {
