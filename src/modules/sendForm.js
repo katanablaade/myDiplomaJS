@@ -1,8 +1,9 @@
 const sendForm = ({ formId, someElem = [] }) => {
   formId.forEach((forms) => {
     const form = document.getElementById(forms);
-    const statusBlock = document.createElement('div');
-    const successText = 'Спасибо! Наш менеджер с вами свяжется!';
+    const helpBlock = document.querySelector('.help-block');
+    const successText =
+      'Спасибо за вашу заявку! Наш менеджер свяжется с вами в течении 24 часов!';
 
     const sendData = (data) => {
       return fetch('https://jsonplaceholder.typicode.com/posts', {
@@ -33,11 +34,11 @@ const sendForm = ({ formId, someElem = [] }) => {
       sendData(formBody)
         .then((data) => {
           formElements.forEach((input) => {
-            statusBlock.textContent = successText;
-            form.append(statusBlock);
+            helpBlock.textContent = successText;
 
             setTimeout(() => {
-              statusBlock.remove(form);
+              helpBlock.textContent =
+                'Мы гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.';
             }, 5000);
             input.value = '';
           });
