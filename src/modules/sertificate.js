@@ -11,11 +11,11 @@ const sertificate = () => {
   sertificateDocument.forEach((i) => {
     i.addEventListener('click', (e) => {
       e.preventDefault();
+      const modalSertificateClose = document.createElement('span');
 
       overlay.style.display = 'block';
       modalSertificate.innerHTML = `<img class="img-sertificate" src= "./images/documents/original/document4.jpg"></img>`;
       modalSertificate.classList.add('is-open');
-      const modalSertificateClose = document.createElement('span');
       modalSertificateClose.classList.add('close-sertificate');
       modalSertificateClose.textContent = 'x';
       modalSertificate.append(modalSertificateClose);

@@ -27,7 +27,7 @@ const slider = () => {
     modules: [Navigation],
     loop: true,
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 5,
     breakpoints: {
       365: {
         slidesPerView: 1,

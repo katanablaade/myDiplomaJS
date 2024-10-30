@@ -21,7 +21,7 @@ const calc = () => {
     } else {
       totalValue = 0;
     }
-    total.value = totalValue;
+    total.value = Math.floor(totalValue);
   };
 
   if (calcBlock) {
