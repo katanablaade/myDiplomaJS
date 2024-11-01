@@ -9,7 +9,7 @@ import calc from './modules/calc';
 
 modal();
 slider();
-timer('31 december 2024');
+timer('21 december 2024');
 validate();
 sendForm({
   formId: ['form1', 'form2'],
